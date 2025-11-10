@@ -75,9 +75,6 @@ regd_users.put("/auth/review/:isbn", verifyToken, (req, res) => {
 });
 
 
-/**
- * ✅ DELETE USER'S REVIEW (optional but recommended)
- */
 regd_users.delete("/auth/review/:isbn", verifyToken, (req, res) => {
     const isbn = req.params.isbn;
     const username = req.username;
